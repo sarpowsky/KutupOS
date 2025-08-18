@@ -17,8 +17,8 @@ const Header = () => {
         <div className="logo">
           <Library size={32} className="logo-icon" />
           <div className="logo-text">
-            <h1>BookNest</h1>
-            <span className="tagline">Your Personal Library Sanctuary</span>
+            <h1>KütüpOS</h1>
+            <span className="tagline">a Library Management System</span>
           </div>
         </div>
         
