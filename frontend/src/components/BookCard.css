@@ -1,0 +1,247 @@
+/* src/components/BookCard.css */
+
+.book-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px var(--shadow);
+  border: 1px solid var(--border);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.book-card.expanded {
+  max-width: 450px;
+  width: 100%;
+}
+
+.book-cover {
+  height: 200px;
+  background: linear-gradient(135deg, var(--secondary-brown) 0%, var(--primary-brown) 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dark);
+  overflow: hidden;
+}
+
+.cover-design {
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.cover-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: var(--text-dark);
+}
+
+.cover-author {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 15px;
+  color: var(--text-light);
+}
+
+.cover-decoration {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.7;
+}
+
+.decoration-line {
+  height: 1px;
+  width: 30px;
+  background: var(--text-light);
+}
+
+.book-spine-shadow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.book-details {
+  padding: 20px;
+}
+
+.book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.book-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background: var(--primary-brown);
+  color: var(--text-dark);
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.info-label {
+  font-weight: 600;
+  color: var(--text-light);
+  min-width: 60px;
+}
+
+.info-value {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.genre-clickable {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.genre-clickable:hover {
+  color: var(--gold);
+}
+
+.genre-edit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.genre-select {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+.save-btn {
+  background: var(--gold);
+  border: none;
+  border-radius: 4px;
+  padding: 4px 6px;
+  color: var(--background);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.save-btn:hover {
+  background: var(--light-brown);
+}
+
+.book-actions {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.delete-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--error);
+  color: var(--text-dark);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #B71C1C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(198, 40, 40, 0.3);
+}
+
+.book-metadata {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+
+.metadata-section h4 {
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.metadata-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metadata-label {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.metadata-value {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.status-available {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.book-corner-fold {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(-45deg, transparent 50%, var(--border) 50%);
+}

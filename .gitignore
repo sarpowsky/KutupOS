@@ -1,0 +1,7 @@
+.venv/
+frontend/node_modules/
+__pycache__/
+node_modules/
+.pytest_cache/
+library_app.log
+pyproject.toml

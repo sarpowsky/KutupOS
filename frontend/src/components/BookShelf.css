@@ -1,0 +1,187 @@
+/* src/components/BookShelf.css */
+
+.bookshelf {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 15px;
+  border: 2px solid var(--border);
+  box-shadow: 0 6px 20px var(--shadow);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.shelf-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: var(--primary-brown);
+  border-radius: 8px;
+}
+
+.section-name {
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+.book-count {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  background: var(--gold);
+  color: var(--background);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.shelf-number {
+  font-size: 0.7rem;
+  color: var(--text-light);
+  background: var(--secondary-brown);
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.unassigned-shelves {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shelf-structure {
+  position: relative;
+  height: 120px;
+}
+
+.shelf-board {
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to bottom, var(--secondary-brown), var(--primary-brown));
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.top-board {
+  top: 0;
+}
+
+.bottom-board {
+  bottom: 0;
+}
+
+.books-container {
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  gap: 2px;
+  align-items: end;
+}
+
+.book-spine {
+  flex: 1;
+  min-height: 50px;
+  border-radius: 2px 2px 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 4px 4px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.book-spine:hover {
+  filter: brightness(1.1);
+  z-index: 10;
+}
+
+.book-spine.highlighted {
+  animation: highlight 2s ease-in-out infinite;
+  box-shadow: 0 0 15px var(--gold);
+}
+
+@keyframes highlight {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.book-author {
+  font-size: 0.55rem;
+  margin-top: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.book-binding {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.binding-line {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.empty-slot {
+  flex: 1;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--border);
+  border-radius: 2px;
+  background: var(--background);
+}
+
+.slot-indicator {
+  width: 4px;
+  height: 4px;
+  background: var(--border);
+  border-radius: 50%;
+}
+
+.shelf-support {
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to right, var(--primary-brown), var(--secondary-brown));
+  border-radius: 3px;
+}
+
+.left-support {
+  left: 0;
+}
+
+.right-support {
+  right: 0;
+}
+
+.genre-indicator {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}

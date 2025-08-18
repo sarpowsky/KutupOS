@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen ... [et al.].",
+    "isbn": "9780262033848",
+    "genre": null
+  },
+  {
+    "title": "The C Programming Language",
+    "author": "Ol946967A",
+    "isbn": "9780131103627",
+    "genre": null
+  },
+  {
+    "title": "Head first Java",
+    "author": "Ol1400543A",
+    "isbn": "9780596009205",
+    "genre": null
+  },
+  {
+    "title": "Error-correction coding for digital communications",
+    "author": "Ol1706341A",
+    "isbn": "9780306406157",
+    "genre": null
+  },
+  {
+    "title": "Head first Java",
+    "author": "Ol1400543A",
+    "isbn": "0596009208",
+    "genre": null
+  },
+  {
+    "title": "Harry Potter and the Goblet of Fire",
+    "author": "Unknown Author",
+    "isbn": "9780439139595",
+    "genre": "Fantasy"
+  }
+]

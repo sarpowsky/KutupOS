@@ -1,0 +1,63 @@
+/* src/components/Header.css */
+.app-header {
+  background: linear-gradient(135deg, var(--primary-brown) 0%, var(--dark-brown) 100%);
+  color: var(--text-dark);
+  padding: 20px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-icon {
+  color: var(--gold);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.logo-text h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.tagline {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  display: block;
+  margin-top: -5px;
+  color: var(--text-light);
+}
+
+.floating-book {
+  opacity: 0.3;
+  animation: float 3s ease-in-out infinite;
+  color: var(--gold);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.header-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(to bottom, var(--shadow), transparent);
+}

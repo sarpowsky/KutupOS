@@ -1,0 +1,67 @@
+/* src/components/FloorSelector.css */
+
+.floor-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+.floor-tabs {
+  display: flex;
+  gap: 10px;
+  background: var(--card-bg);
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.floor-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  min-width: 120px;
+  color: var(--text-light);
+}
+
+.floor-tab:hover {
+  background: var(--primary-brown);
+  color: var(--text-dark);
+}
+
+.floor-tab.active {
+  background: var(--gold);
+  color: var(--background);
+  font-weight: 600;
+}
+
+.floor-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.floor-count {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .floor-tabs {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .floor-tab {
+    min-width: 200px;
+  }
+}
